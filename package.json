@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/davidhsklar/make-me-a-profile/issues"
   },
-  "homepage": "https://github.com/davidhsklar/make-me-a-profile#readme"
+  "homepage": "https://github.com/davidhsklar/make-me-a-profile#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
