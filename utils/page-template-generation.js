@@ -25,7 +25,7 @@ const generateTeamCard = (member) => {
                     </li>
                     `
     } else if (member.school) {
-        // console.log(member.school)
+        
         extraAttr = `
                     <li class="list-group-item">
                        School:<a class="card-link"> ${member.school} </a>
@@ -35,8 +35,8 @@ const generateTeamCard = (member) => {
 
 
     return `
-    <div id="cards" class="card" style="width: 18rem;">
-      <div class="card-body bg-primary">
+    <div id="cards" class="card shadow p-3 mb-5 bg-body rounded">
+      <div class="card-body bg-danger">
         <h5 class="card-title text-light">${name}</h5>
         <h6 class="card-title text-light">
             <i class="${role.icon}"></i>
@@ -73,7 +73,7 @@ const generateTeamPage = (team) => {
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <title>My Team List</title>
+          <title>The People You Work With or Something</title>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
           <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
@@ -81,10 +81,10 @@ const generateTeamPage = (team) => {
         </head>
         
         <body>
-      <header class="bg-primary">
-        <h1 class="text-light">My Team</h1>
+      <header class="bg-danger">
+        <h1 class="text-dark">My Team</h1>
       </header>
-      <main class="container my-5 d-flex justify-content-center">
+      <main class="container my-6 d-flex justify-content-center">
         ${generateTeamCards(team)}
       </main>
     </body>
