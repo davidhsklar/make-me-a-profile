@@ -1,0 +1,23 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "creates a team profile",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "questions": "inquirer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidhsklar/make-me-a-profile.git"
+  },
+  "author": "david sklar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidhsklar/make-me-a-profile/issues"
+  },
+  "homepage": "https://github.com/davidhsklar/make-me-a-profile#readme"
+}
